@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>flip animation with CSS animation</title>
+    <style>
+      .anime {
+        -webkit-animation: flip 5s steps(20) 0s infinite;
+        -moz-animation: flip 5s steps(20) 0s infinite;
+        animation: flip 5s steps(20) 0s infinite;
+        background-image: url(sprite.jpg);
+        height: 1080px;
+        overflow: hidden;
+        width: 1920px;
+      }
+
+      @-webkit-keyframes flip {
+        from { background-position:      0px 0px; }
+        to   { background-position: -38400px 0px; }
+      }
+      @-moz-keyframes flip {
+        from { background-position:      0px 0px; }
+        to   { background-position: -38400px 0px; }
+      }
+      @keyframes flip {
+        from { background-position:      0px 0px; }
+        to   { background-position: -38400px 0px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="anime"></div>
+  </body>
+</html>
